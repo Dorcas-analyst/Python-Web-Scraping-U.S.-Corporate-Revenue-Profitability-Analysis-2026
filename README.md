@@ -140,44 +140,12 @@ The project produced three visualizations:
 These charts helped communicate differences in corporate scale, profitability, and industry concentration.
 
 ## Key Lessons
-Web Scraping
+- Web Scraping: Web scraping requires an understanding of HTML structure, not just Python syntax.
+- Data Validation: A program running without an exception does not guarantee correct data.
+- Debugging: Small coding mistakes can silently produce large data-quality problems.
+- Robust Scraping: Hard-coded table indexes can make a scraper fragile if the webpage structure changes.
+- Responsible Scraping: Production scraping should consider HTTP status checks, request delays, descriptive User-Agent headers, robots.txt, and the target website's terms of service.
 
-Web scraping requires an understanding of HTML structure, not just Python syntax.
-
-Data Validation
-
-A program running without an exception does not guarantee correct data.
-
-Debugging
-
-Small coding mistakes can silently produce large data-quality problems.
-
-Robust Scraping
-
-Hard-coded table indexes can make a scraper fragile if the webpage structure changes.
-
-Responsible Scraping
-
-Production scraping should consider HTTP status checks, request delays, descriptive User-Agent headers, robots.txt, and the target website's terms of service.
-
-
-## Suggested Repository Structure
-Task78-Web-Scraping/
-│
-├── README.md
-├── Task78.ipynb
-│
-├── data/
-│   ├── top_10_revenue.csv
-│   └── top_50_net_profit.csv
-│
-├── visualizations/
-│   ├── top_10_revenue.png
-│   ├── industry_distribution.png
-│   └── profit_vs_revenue.png
-│
-└── docs/
-    └── Task78_Web_Scraping_Technical_Report.pdf
 ## Reference
 1, Source: Grokipedia — List of largest companies in the United States by revenue
 2, Libraries: Requests, BeautifulSoup4, Pandas
